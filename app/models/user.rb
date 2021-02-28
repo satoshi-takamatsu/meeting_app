@@ -5,6 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
         #  :confirmable, :lockable, :timeoutable, :trackable
 
-
-  
+  validatas :name, presence: true
 end
