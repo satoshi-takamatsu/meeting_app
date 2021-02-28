@@ -1,0 +1,25 @@
+.top-page-header {
+  background-color: white;
+  height: 80px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__left {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.nav__right {
+  margin-top: 20px;
+}
+
+.nav__btn {
+  margin-right: 40px;
+  margin-left: 40px;
+}
