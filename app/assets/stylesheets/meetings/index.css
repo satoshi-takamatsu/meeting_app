@@ -5,8 +5,6 @@
   background-image: url(/assets/meeting.png);
   background-size: cover;
   opacity: 0.8;
-  /* background-repeat: no-repeat; */
-  /* background-position: top center; */
   display: flex;
   justify-content: center;
 }
