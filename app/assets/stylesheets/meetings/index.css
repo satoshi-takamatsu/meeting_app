@@ -1,0 +1,55 @@
+/* ログアウト状態のトップページ */
+.main {
+  height: calc(100vh - 130px);
+  width: 100vw;
+  background-image: url(/assets/meeting.png);
+  background-size: cover;
+  opacity: 0.8;
+  /* background-repeat: no-repeat; */
+  /* background-position: top center; */
+  display: flex;
+  justify-content: center;
+}
+
+.main-messages {
+  text-align: center;
+  margin-top: 25vh;
+  font-size: 20px;
+}
+
+.guest-login {
+  margin-top: 20vh;
+}
+
+.guest-login-button {
+  margin-top: 15px;
+}
+
+.guest__btn {
+  text-decoration: none;
+  border: 1px solid black;
+}
+/* */
+
+/* ログイン状態のトップページ */
+.main-login {
+  height: calc(100vh - 130px);
+  width: 100vw;
+  background-color: darkgray;
+  opacity: 0.2;
+}
+
+.main-left {
+  /* background-image: url(/assets/meeting.png); */
+  /* height: 30vh;
+  width: 30vh; */
+
+}
+
+/* .main-right {
+  background-image: url(/assets/meeting.png);
+  background-color: crimson;
+  height: 300vh;
+} */
+
+

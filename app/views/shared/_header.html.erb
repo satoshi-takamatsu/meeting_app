@@ -2,18 +2,17 @@
 <header class="top-page-header">
   <div class="inner">
     <div class="nav">
-      <div class="nav__left">
+      <div class="nav-left">
         <h1>1on1 Meeting support</h1>
       </div>
       <% if user_signed_in? %>
-        <div class="nav__right">
-          <%# <%= link_to "トップページに戻る", "#", class: :nav_logout %>
-          <%= link_to "ログアウト", "#", class: :nav__meething %>
+        <div class="nav-right-logout">
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
         </div>
       <% else %>
-        <div class="nav__right">
-          <%= link_to "ログイン", new_user_session_path, method: :get, class: :nav_login %>
-          <%= link_to "新規登録", new_user_registration_path, method: :get, class: :nav__btn %>
+        <div class="nav-right">
+          <%= link_to "ログイン", new_user_session_path, method: :get, class: :nav__login %>
+          <%= link_to "新規登録", new_user_registration_path, method: :get, class: :nav__signin %>
         </div>
       <% end %>
     </div>

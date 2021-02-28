@@ -9,17 +9,41 @@
   justify-content: space-between;
 }
 
-.nav__left {
+.nav-left {
   font-size: 25px;
   margin-top: 20px;
   margin-left: 30px;
 }
 
-.nav__right {
+.nav-right {
   margin-top: 20px;
+}
+
+.nav-right-logout {
+  margin-top: 30px;
+  margin-right: 30px;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
+/* link_toのボタン */
+.nav__signin {
+  margin-right: 40px;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.nav__login {
+  text-decoration: none;
+}
+
+.nav__logout {
+  text-decoration: none;
 }
 
 .nav__btn {
   margin-right: 40px;
   margin-left: 40px;
+  text-decoration: none;
 }
+/*  */
