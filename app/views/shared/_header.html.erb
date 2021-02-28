@@ -5,14 +5,17 @@
       <div class="nav__left">
         <h1>1on1 Meeting support</h1>
       </div>
-      <%# <div class="nav__right"> %>
-        <%# <%= link_to "ログアウト", "#", class: :nav_logout %>
-        <%# <%= link_to "New meething", "#", class: :nav__meething %>
-      <%# </div> %>
-      <div class="nav__right">
-        <%= link_to "ログイン", new_user_session_path, method: :get, class: :nav_login %>
-        <%= link_to "新規登録", new_user_registration_path, method: :get, class: :nav__btn %>
-      </div>
+      <% if user_signed_in? %>
+        <div class="nav__right">
+          <%# <%= link_to "トップページに戻る", "#", class: :nav_logout %>
+          <%= link_to "ログアウト", "#", class: :nav__meething %>
+        </div>
+      <% else %>
+        <div class="nav__right">
+          <%= link_to "ログイン", new_user_session_path, method: :get, class: :nav_login %>
+          <%= link_to "新規登録", new_user_registration_path, method: :get, class: :nav__btn %>
+        </div>
+      <% end %>
     </div>
   </div>
 </header>

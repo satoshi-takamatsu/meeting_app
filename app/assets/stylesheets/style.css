@@ -1,0 +1,33 @@
+/* ログインページ */
+.login_main {
+  height: calc(100vh - 130px);
+  width: 100vw;
+  background-image: url(/assets/meeting2.png);
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_message {
+  text-align: center;
+}
+/*  */
+
+/* 新規登録ページ */
+.signin_main {
+  height: calc(100vh - 130px);
+  width: 100vw;
+  background-image: url(/assets/meeting2.png);
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin_message {
+  text-align: center;
+}
+/*  */
