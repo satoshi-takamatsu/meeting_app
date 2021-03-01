@@ -17,7 +17,7 @@
 
 /* 新規登録ページ */
 .signin_main {
-  height: calc(100vh - 130px);
+  height: calc(100vh - 130vh);
   width: 100vw;
   background-image: url(/assets/meeting2.png);
   background-size: cover;
@@ -52,6 +52,22 @@
     font-size: 16px;
   }
 }
+/*  */
 
 /* viewport設定・スマートフォン表示時 */
-@media (max)
+@media (max-width: 599px) {
+  .page-heading {
+    font-size: 20px;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .card__title {
+    font-size: 18px;
+  }
+  .card__summary {
+    font-size: 14px;
+  }
+}
+/*  */
