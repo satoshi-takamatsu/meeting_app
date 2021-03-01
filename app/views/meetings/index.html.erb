@@ -1,0 +1,29 @@
+<%= render "shared/header" %>
+
+  <% if user_signed_in? %>
+    <div class="main-login">
+      <div class="main-left">
+        <img src="images/meeting.png">
+      </div>
+      <div class="main-right">
+      </div>
+    </div>
+  <% else %>
+    <div class="main">
+      <div class="main-messages">
+        <p>1on1 Meetingをされる全ての方達へ</p>
+        <p>少しでもお役に立てればという思いで作りました</p>
+        
+        <div class="guest-login">
+          <p>登録前に試してみたい方はこちらからどうぞ</p>
+          <div class="guest-login-button">
+            <%= link_to "ゲストユーザーとしてログイン", "#", class: :guest__btn %>
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  <% end %>  
+<%= render "shared/footer" %>
