@@ -36,10 +36,11 @@
 }
 
 .nav__logout {
+  margin-right: 50px;
   text-decoration: none;
 }
 
-.nav__btn {
+.nav__top {
   margin-right: 40px;
   margin-left: 40px;
   text-decoration: none;

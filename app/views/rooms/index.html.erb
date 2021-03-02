@@ -3,11 +3,14 @@
   <% if user_signed_in? %>
     <div class="main-login">
       <div class="main-login-left">
-        <%# <%= image_tag "meeting.png", class: :main_login_left %>
-        ミーティングルームを作成する
+        <%= image_tag "meeting.png", class: :login_left_image %>
+        <p>ミーティングルームを作成する</p>
+        <%= link_to "Create Meeting Room", "#", class: :room_create_btn %>
       </div>
-      <div class="main-right">
-        ミーティングを始める
+      <div class="main-login-right">
+        <%= image_tag "meeting.png", class: :login_right_image %>
+        <p>ミーティングを始める</p>
+        <%= link_to "Start Meeting", "#", class: :room_start_btn %>
       </div>
     </div>
   <% else %>
