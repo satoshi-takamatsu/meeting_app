@@ -33,21 +33,22 @@
 .main-login {
   height: calc(100vh - 130px);
   width: 100vw;
-  opacity: 0.2;
+  opacity: 0.8;
   background-color: darkgray;
 }
 
-.main_login_left {
+/* html側で、image_tagの場合 */
+/* .main_login_left {
   height: 40vh;
   width: 40vw;
   margin-top: 22vh;
   margin-left: 10vw;
-}
+} */
 
 .main-login-left {
   background-image: url(/assets/meeting.png);
-  height: 20%;
-  width: 20%;
+  height: 25vh;
+  width: 25vw;
 }
 /*  */
 
