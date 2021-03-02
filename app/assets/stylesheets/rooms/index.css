@@ -33,21 +33,22 @@
 .main-login {
   height: calc(100vh - 130px);
   width: 100vw;
-  background-color: darkgray;
   opacity: 0.2;
+  background-color: darkgray;
 }
 
-.main-left {
-  /* background-image: url(/assets/meeting.png); */
-  /* height: 30vh;
-  width: 30vh; */
-
+.main_login_left {
+  height: 40vh;
+  width: 40vw;
+  margin-top: 22vh;
+  margin-left: 10vw;
 }
 
-/* .main-right {
+.main-login-left {
   background-image: url(/assets/meeting.png);
-  background-color: crimson;
-  height: 300vh;
-} */
+  height: 20%;
+  width: 20%;
+}
+/*  */
 
 

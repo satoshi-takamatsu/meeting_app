@@ -2,8 +2,8 @@
 
   <% if user_signed_in? %>
     <div class="main-login">
-      <div class="main-left">
-        <img src="images/meeting.png">
+      <div class="main-login-left">
+        <%# <%= image_tag "meeting.png", class: :main_login_left %>
         ミーティングルームを作成する
       </div>
       <div class="main-right">
@@ -24,4 +24,5 @@
       </div>
     </div>  
   <% end %>  
+  
 <%= render "shared/footer" %>
