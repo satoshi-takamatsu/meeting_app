@@ -3,12 +3,12 @@
   <% if user_signed_in? %>
     <div class="main-login">
       <div class="main-login-left">
-        <%= image_tag "meeting.png", class: :login_left_image %>
+        <%= image_tag "meeting4.jpg", class: :login_left_image %>
         <p>ミーティングルームを作成する</p>
         <%= link_to "Create Meeting Room", "#", class: :room_create_btn %>
       </div>
       <div class="main-login-right">
-        <%= image_tag "meeting.png", class: :login_right_image %>
+        <%= image_tag "meeting5.jpg", class: :login_right_image %>
         <p>ミーティングを始める</p>
         <%= link_to "Start Meeting", "#", class: :room_start_btn %>
       </div>
@@ -16,8 +16,14 @@
   <% else %>
     <div class="main">
       <div class="main-messages">
-        <p>1on1 Meeting をされる全ての方達へ</p>
-        <p>少しでもお役に立てればという思いで作りました</p>
+        <ul>
+          <li>このアプリは、1on1ミーティングで使った頂く為に作ったテキストコミュニケーションアプリです。</li>
+          <br>
+          <li>シンプルで使いやすい作りにしております。</li>
+          <br>
+          <li>1on1 Meeting をされる全ての方達へ</li>
+          <li>少しでもお役に立てればという思いで作りました。</li>
+        <ul>
         <div class="guest-login">
           <p>登録前に試してみたい方はこちらからどうぞ</p>
           <div class="guest-login-button">

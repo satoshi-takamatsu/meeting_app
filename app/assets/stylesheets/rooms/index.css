@@ -33,7 +33,7 @@
 .main-login {
   height: calc(100vh - 130px);
   width: 100vw;
-  background-color: rgba(211,211,211,0.55);
+  background-color: rgba(211,211,211,0.4);
   display: flex;
   justify-content: flex-start;
 }
