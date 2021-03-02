@@ -2,19 +2,22 @@
 
   <% if user_signed_in? %>
     <div class="main-login">
-      <div class="main-left">
-        <img src="images/meeting.png">
-        ミーティングルーム作成
+      <div class="main-login-left">
+        <%= image_tag "meeting.png", class: :login_left_image %>
+        <p>ミーティングルームを作成する</p>
+        <%= link_to "Create Meeting Room", "#", class: :room_create_btn %>
       </div>
-      <div class="main-right">
+      <div class="main-login-right">
+        <%= image_tag "meeting.png", class: :login_right_image %>
+        <p>ミーティングを始める</p>
+        <%= link_to "Start Meeting", "#", class: :room_start_btn %>
       </div>
     </div>
   <% else %>
     <div class="main">
       <div class="main-messages">
-        <p>1on1 Meetingをされる全ての方達へ</p>
+        <p>1on1 Meeting をされる全ての方達へ</p>
         <p>少しでもお役に立てればという思いで作りました</p>
-        
         <div class="guest-login">
           <p>登録前に試してみたい方はこちらからどうぞ</p>
           <div class="guest-login-button">
@@ -22,9 +25,7 @@
           </div>
         </div>
       </div>
-
-
-      </div>
-    </div>
+    </div>  
   <% end %>  
+  
 <%= render "shared/footer" %>

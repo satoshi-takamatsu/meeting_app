@@ -1,0 +1,101 @@
+/* ログアウト状態のトップページ */
+.main {
+  height: calc(100vh - 130px);
+  width: 100vw;
+  background-image: url(/assets/meeting.png);
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+}
+
+.main-messages {
+  text-align: center;
+  margin-top: 25vh;
+  font-size: 20px;
+}
+
+.guest-login {
+  margin-top: 20vh;
+}
+
+.guest-login-button {
+  margin-top: 15px;
+}
+
+.guest__btn {
+  text-decoration: none;
+  border: 1px solid black;
+}
+/* */
+
+/* ログイン状態のトップページ */
+.main-login {
+  height: calc(100vh - 130px);
+  width: 100vw;
+  background-color: rgba(211,211,211,0.55);
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* 左側 */
+.main-login-left {
+  width: 50%;
+}
+
+.login_left_image {
+  height: 50%;
+  width: 40%;
+  margin-top: 10%;
+  margin-left: 5%;
+  opacity: 0.8;
+  border-radius: 300px;
+  position: absolute;
+}
+
+.main-login-left p {
+  position: absolute;
+  margin-top: 18%;
+  margin-left: 12.5%;
+  font-size: 30px;
+}
+
+.room_create_btn {
+  position: absolute;
+  margin-top: 26%;
+  margin-left: 15%;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+/* 右側 */
+.main-login-right {
+  width: 50%;
+}
+
+.login_right_image {
+  height: 50%;
+  width: 40%;
+  margin-top: 10%;
+  margin-left: 5%;
+  opacity: 0.8;
+  border-radius: 300px;
+  position: absolute;
+}
+
+.main-login-right p {
+  position: absolute;
+  margin-top: 18%;
+  margin-left: 16%;
+  font-size: 30px;
+}
+
+.room_start_btn {
+  position: absolute;
+  margin-top: 26%;
+  margin-left: 18.5%;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+/*  */
