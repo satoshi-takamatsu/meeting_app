@@ -5,7 +5,7 @@
       <div class="main-login-left">
         <%= image_tag "meeting4.jpg", class: :login_left_image %>
         <p>ミーティングルームを作成する</p>
-        <%= link_to "Create Meeting Room", "#", class: :room_create_btn %>
+        <%= link_to "Create Meeting Room", new_room_path, method: :get, class: :room_create_btn %>
       </div>
       <div class="main-login-right">
         <%= image_tag "meeting5.jpg", class: :login_right_image %>
