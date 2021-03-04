@@ -1,3 +1,9 @@
-<%= render "shared/header" %>
+<%= render "shared/header3" %>
+
 <%= form_with model: @room, url: new_room_path, local: true do |f| %>
+  <div class="create-room-main">
+    <h1>ミーティングルーム作成ページ</h1>
+  </div>
 <% end %>
+
+<%= render "shared/footer" %>

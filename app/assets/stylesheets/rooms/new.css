@@ -1,0 +1,13 @@
+/* ミーティングルーム作成ページ */
+
+.create-room-main {
+  height: calc(100vh - 130px);
+  width: 100vw;
+  background-image: url(/assets/meeting.png);
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+}
+
+/*  */
