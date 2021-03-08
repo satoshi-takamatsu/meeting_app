@@ -21,8 +21,7 @@
 }
 
 .nav-right-logout {
-  background-color: cyan;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-right: 40px;
 }
 
@@ -46,5 +45,10 @@
   margin-right: 40px;
   margin-left: 40px;
   text-decoration: none;
+}
+
+.nav__return {
+  text-decoration: none;
+  margin-right: 40px;
 }
 /*  */
