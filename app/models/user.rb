@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
         #  :confirmable, :lockable, :timeoutable, :trackable
 
+  has_many :room_users
+  has_many :rooms
   
   with_options presence: true do
     validates :name

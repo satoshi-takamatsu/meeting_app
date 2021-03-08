@@ -1,0 +1,55 @@
+/* ミーティングルーム作成ページ */
+
+.create-room-main {
+  height: calc(100vh - 130px);
+  width: 100vw;
+  background-image: url(/assets/meeting.png);
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.room-messages {
+  margin-top: 100px;
+}
+
+.page_title {
+  font-size: 25px;
+}
+
+.room_name_holder {
+  width: 20vw;
+  text-align: center;
+}
+
+.create-room-btn {
+  width: 8vw;
+  height: 4vh;
+  background-color: rgba(28, 122, 230, 0.733);
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+.create-room-description {
+  margin-top: 50px;
+  font-size: 20px;
+}
+.create-room-caution {
+  margin-top: 40px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.create-room-url {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.room-url {
+  width: 30vw;
+  text-align: center;
+}
+
+/*  *

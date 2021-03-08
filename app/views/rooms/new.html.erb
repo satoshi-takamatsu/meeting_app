@@ -1,3 +1,35 @@
-<%= render "shared/header" %>
+<%= render "shared/header3" %>
+
 <%= form_with model: @room, url: new_room_path, local: true do |f| %>
+  <div class="create-room-main">
+    <div class="room-messages">
+      <ul>
+        <li>
+          <%= f.label :room_name, "ミーティングルーム名", class: :page_title %><br />
+          <%= f.text_field :room_name, placeholder: "全角半角英数字で入力してください", class: :room_name_holder %>
+        </li>
+        <br>
+        <li><%= f.submit "作成する", class: "create-room-btn" %></li>
+        <br>
+        <div class="create-room-description">
+          <li>ミーティングルーム作成後、下記にルームURLが発行されます。</li>
+          <li>招待したいユーザーへルームURLを共有してください。</li>
+          <li>URLにアクセスすると招待が完了致します。</li>
+        </div>
+        <br>
+        <div class="create-room-caution">
+          <li>※招待するユーザーは、本アプリの新規登録を完了している必要がございます。</li>
+          <li>※招待できるユーザーは一人までとなります。</li>
+          <li>※ルームの有効期限は1年です。その間の削除はルーム作成ユーザーが行えます。<br>　ミーティングルームページのルーム編ボタンからお願い致します。</li>
+        </div>
+        <br>
+        <div class="create-room-url">
+          <li><h1>発行ルームURL</h1></li>
+          <input type="url", class="room-url", placeholder="ルーム作成後、こちらにルームURLが表示されます">
+        </div>
+      </ul>
+    </div>
+  </div>
 <% end %>
+
+<%= render "shared/footer" %>
