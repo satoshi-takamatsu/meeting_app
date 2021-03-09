@@ -3,6 +3,14 @@ body {
   font-family: "mplus-1p-medium";
 }
 
+.sign_in_field {
+  width: 18vw;
+}
+
+.actions {
+  margin-top: 25px;
+}
+
 /* ログインページ */
 .login_main {
   height: calc(100vh - 130px);
@@ -17,6 +25,11 @@ body {
 
 .login_message {
   text-align: center;
+}
+
+.login_message h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 /*  */
 
@@ -34,6 +47,11 @@ body {
 
 .signin_message {
   text-align: center;
+}
+
+.signin_message h2{
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 /*  */
 
