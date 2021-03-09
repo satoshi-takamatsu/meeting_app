@@ -66,6 +66,7 @@ node_modules/
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+.Ds_Store
 
 # Ignore uploaded files in development
 /storage/*
