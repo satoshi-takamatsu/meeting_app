@@ -12,16 +12,19 @@
 
 ActiveRecord::Schema.define(version: 2021_03_04_220924) do
 
-  create_table "room_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "room_id"
+  create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["room_id"], name: "index_room_users_on_room_id"
-    t.index ["user_id"], name: "index_room_users_on_user_id"
   end
 
-  create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "room_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "room_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "rooms", id: :string, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "room_name", null: false
     t.string "room_url"
     t.bigint "user_id"
@@ -43,7 +46,5 @@ ActiveRecord::Schema.define(version: 2021_03_04_220924) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "room_users", "rooms"
-  add_foreign_key "room_users", "users"
   add_foreign_key "rooms", "users"
 end

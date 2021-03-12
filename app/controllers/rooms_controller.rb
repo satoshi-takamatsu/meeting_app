@@ -1,4 +1,5 @@
 class RoomsController < ApplicationController
+  before_action :create_url, only: :create
 
   def index
   end
@@ -9,8 +10,10 @@ class RoomsController < ApplicationController
 
   def create
     @room = Room.new(room_params)
-    if @room.save
-      render :new
+    binding.pry
+    @room_url = Room.select(:room_url)
+    if @room.save && @room_url.save
+      ridirect_to :new
     else
       render :new
     end
@@ -21,4 +24,7 @@ class RoomsController < ApplicationController
     params.require(:room).permit(:room_name, :room_url).merge(user_id: current_user.id)
   end
 
+  def create_url
+    @room_url = SecureRandom.urlsafe_base64(10)
+  end
 end
