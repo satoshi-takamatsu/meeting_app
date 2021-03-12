@@ -10,10 +10,8 @@ class RoomsController < ApplicationController
 
   def create
     @room = Room.new(room_params)
-    binding.pry
-    @room_url = Room.select(:room_url)
-    if @room.save && @room_url.save
-      ridirect_to :new
+    if @room.save
+      redirect_to new_room_path
     else
       render :new
     end
@@ -21,7 +19,7 @@ class RoomsController < ApplicationController
 
   private
   def room_params
-    params.require(:room).permit(:room_name, :room_url).merge(user_id: current_user.id)
+    params.require(:room).permit(:room_name, :room_url).merge(user_id: current_user.id, room_url: @room_url)
   end
 
   def create_url
