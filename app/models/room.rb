@@ -4,6 +4,5 @@ class Room < ApplicationRecord
 
   with_options presence: true do
     validates :room_name
-    validates :room_url
   end
 end
