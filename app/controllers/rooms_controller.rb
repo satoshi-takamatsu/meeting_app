@@ -28,5 +28,4 @@ class RoomsController < ApplicationController
   def create_url
     @room_url = SecureRandom.urlsafe_base64(10)
   end
-
 end

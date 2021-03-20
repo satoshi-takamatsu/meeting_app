@@ -1,5 +1,4 @@
 <%= render "shared/header3" %>
-
 <%= form_with(model: @room, url: rooms_path, local: true) do |f| %>
   <div class="create-room-main">
     <div class="room-messages">
@@ -25,7 +24,9 @@
         <br>
         <div class="create-room-url">
           <li><h1>発行ルームURL</h1></li>
-          <input type="url", class="room-url", placeholder="ルーム作成後、こちらにルームURLが表示されます">
+          <input type="url", class="room-url", placeholder="ルーム作成後、こちらにルームURLが表示されます", id="room_url">
+          <%# <%= f.label :room_url, "発行ルームURL", class: :room %>
+          <%# <%= f.text_field :room_url, placeholder: "ルーム作成後、こちらにルームURLが表示されます" %>
         </div>
       </ul>
     </div>
