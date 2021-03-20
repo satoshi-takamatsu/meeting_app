@@ -3,12 +3,7 @@
   <div class="create-room-main">
     <div class="room-messages">
       <ul>
-        <li>
-          <%= f.label :room_name, "ミーティングルーム名", class: :page_title %><br />
-          <%= f.text_field :room_name, placeholder: "全角半角英数字で入力してください", class: :room_name_holder %>
-        </li>
         <br>
-        <li><%= f.submit "作成する", class: "create-room-btn" %></li>
         <br>
         <div class="create-room-description">
           <li>ミーティングルーム作成後、下記にルームURLが発行されます。</li>
@@ -24,7 +19,7 @@
         <br>
         <div class="create-room-url">
           <li><h1>発行ルームURL</h1></li>
-          <input type="url", class="room-url", placeholder="ルーム作成後、こちらにルームURLが表示されます", id="room_url">
+          <input type="url", class="room-url", placeholder="ルーム作成後、こちらにルームURLが表示されます">
           <%# <%= f.label :room_url, "発行ルームURL", class: :room %>
           <%# <%= f.text_field :room_url, placeholder: "ルーム作成後、こちらにルームURLが表示されます" %>
         </div>
