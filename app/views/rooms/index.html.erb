@@ -10,7 +10,7 @@
       <div class="main-login-right">
         <%= image_tag "meeting5.jpg", class: :login_right_image %>
         <p>ミーティングを始める</p>
-        <%= link_to "Start Meeting", "#", class: :room_start_btn %>
+        <%= link_to "Start Meeting", user_path(current_user.id), method: :get, class: :room_start_btn %>
       </div>
     </div>
   <% else %>
