@@ -6,7 +6,7 @@ class User < ApplicationRecord
         #  :confirmable, :lockable, :timeoutable, :trackable
 
   has_many :room_users
-  has_many :rooms
+  has_many :rooms, through: :room_users
   
   with_options presence: true do
     validates :name

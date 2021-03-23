@@ -2,7 +2,7 @@ class RoomsController < ApplicationController
   before_action :create_url, only: :create
 
   def index
-    @user = User.find(current_user.id)
+    @rooms = Room.all
   end
   
   def new

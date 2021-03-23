@@ -1,0 +1,21 @@
+/* ユーザー詳細ページ */
+
+.users-show-main {
+  height: calc(100vh - 130px);
+  width: 100vw;
+  background-image: url(/assets/meeting.6.jpg);
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.users-show-username {
+  margin-top: 150px;
+  font-size: 25px;
+}
+
+.users-show-description {
+  font-size: 18px;
+}

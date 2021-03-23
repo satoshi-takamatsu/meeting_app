@@ -1,1 +1,22 @@
-user 詳細ページ
+<%= render "shared/header3" %>
+
+<div class="users-show-main">
+  <div class="users-show-message">
+    <ul>
+      <div class="users-show-username">
+        <li><%= @user.name %> 様
+      </div>
+      <br>
+      <div class="users-show-description">
+        <li>どちらのミーティングルームに入室致しますか？</li>
+        <li>入室したいルーム名をクリックしてください。</li>
+      </div>
+      <br>
+      <div class="users-show-select">
+        <%= render partial: 'rooms/room', locals: { rooms: @rooms } %>
+      </div>
+    </ul>
+  </div>
+</div>
+
+<%= render "shared/footer" %>
