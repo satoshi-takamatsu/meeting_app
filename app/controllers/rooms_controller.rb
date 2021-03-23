@@ -2,6 +2,7 @@ class RoomsController < ApplicationController
   before_action :create_url, only: :create
 
   def index
+    @rooms = Room.all
   end
   
   def new
@@ -18,6 +19,7 @@ class RoomsController < ApplicationController
   end
 
   def show
+    @room = Room.find(params[:id])
   end
 
   private
