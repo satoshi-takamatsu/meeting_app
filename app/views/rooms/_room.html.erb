@@ -1,5 +1,7 @@
 <div class="room-select">
-  <%# <%= link_to rooms.room_name, "#" %>
-  <% binding.pry %>
-  <%= rooms.room_name %>
+  <% @room.each do |room| %>
+    <ul>
+      <li><%= room.room_name %></li><br>
+    </ul>
+  <% end %>
 </div>

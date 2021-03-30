@@ -13,7 +13,9 @@
       </div>
       <br>
       <div class="users-show-select">
-        <%= render partial: 'rooms/room', locals: { rooms: @rooms } %>
+      <%# <% @room.each do |room| %>
+        <%= render partial: 'rooms/room', locals: { rooms: @room } %>
+      <%# <% end %>
       </div>
     </ul>
   </div>
