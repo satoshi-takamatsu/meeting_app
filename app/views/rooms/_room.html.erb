@@ -1,7 +1,7 @@
 <div class="room-select">
   <% @room.each do |room| %>
     <ul>
-      <li><%= room.room_name %></li><br>
+      <li><%= link_to room.room_name, edit_room_path(room.id), method: :get %></li><br>
     </ul>
   <% end %>
 </div>
