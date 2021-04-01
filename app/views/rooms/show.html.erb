@@ -20,9 +20,6 @@
         <br>
         <div class="create-room-url">
           <li><h1>発行ルームURL</h1></li>
-          <%# <input type="url", class="room-url", placeholder="@room.room_url"> %>
-          <%# <%= f.label :room_url, "発行ルームURL", class: :room %>
-          <%# <%= f.text_field :@room, placeholder: "https://rooms/@room.id/@room_url" %>
           <div class="box">https://rooms/<%= @room.id %>/<%= @room.room_url %></div>
         </div>
       </ul>
