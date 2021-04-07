@@ -1,6 +1,6 @@
 # 1on1 Meeting Support
 1on1meeting専用のビジネスチャットアプリです。  
-機能はシンプルで使いやすい設計にしております。
+シンプルで使いやすい設計にしております。
 ![image](https://user-images.githubusercontent.com/70362048/113370645-592aea80-939f-11eb-921b-ea8132ef7289.png)
 
 
@@ -16,10 +16,71 @@ Password: test1234
 3.ミーティングルーム作成  
 4.ミーティングルーム入室 
 
-### このアプリで解決したい課題
-1on1ミーティングをやる方たちのコミュニケーションツール
-slack等のビジネスチャットアプリは、機能が多彩の為、使いづらいと感じる方達もいると感じているという問題があると感じているためです。
-LINEを現場で使っていたのですが、仕事とプライベートが一緒くたになってしまい、マネジメントに集中が出来なくなってしまうこと。
-1on1ミーティングが、日本でもっと浸透してほしいと思っているから
+### このアプリで開発したきっかけ
+自身の経験で、1on1ミーティングを行なった事がありました。
+当時は記録・進捗を手書きメモで行なっていんたのですが、手書きに対して不便さを感じており、専用のアプリがあれば嬉しいと感じていた事がきっかけです。
+ビジネスチャットで使う、slack等のアプリは多機能の為、使いづらいと感じる方もいる可能性があると感じたことです。
+
+# 実装機能
+・ユーザー登録、ログイン機能（devise）
+[![Image from Gyazo](https://i.gyazo.com/eec7c0a4422c3f92031492a5dfb21009.jpg)](https://gyazo.com/eec7c0a4422c3f92031492a5dfb21009)
+[![Image from Gyazo](https://i.gyazo.com/5ad1f0a446329589dd439e943d5f65a7.jpg)](https://gyazo.com/5ad1f0a446329589dd439e943d5f65a7)
 
 
+# 今後実装予定の機能
+・ゲストユーザーログイン機能  
+・ミーティングルーム作成機能、削除機能  
+・コメント投稿機能・削除機能  
+・画像投稿機能  
+
+# DB設計
+## users テーブル
+
+| Column    | Type    | Options     |
+| --------- | ------- | ----------- |
+| name      | string  | null: false |
+| email     | string  | null: false |
+| password  | string  | null: false |
+
+### Association
+
+- has_many :room_users
+- has_many :rooms, through: room_users
+- has_many :messages
+
+## rooms テーブル
+
+| Column | Type    | Options     |
+| ------ | ------- | ----------- |
+| name   | string  | null: false |
+
+### Association
+
+- has_many :room_users
+- has_many :users, through: room_users
+- has_many :messages
+
+## room_users テーブル
+
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| room   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :room
+- belongs_to :user
+
+## messages テーブル
+
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| content | string     |                                |
+| user    | references | null: false, foreign_key: true |
+| room    | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :room
+- belongs_to :user
